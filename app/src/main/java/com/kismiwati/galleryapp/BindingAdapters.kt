@@ -33,12 +33,12 @@ fun bindImage(imgView: ImageView, imgUrl: String?) {
     }
 }
 
-/**
- * Bagian ini Adaptor akan menampilkan MarsApiStatus dari permintaan jaringan dalam tampilan gambar.
- * ketika permintaan sedang memuat, maka akan menampilkan loading_animation.
- * Jika permintaan memiliki kesalahan, maka akan menampilkan gambar yang rusak untuk memberitahu terjadi kesalahan koneksi.
- * Ketika permintaan selesai, maka akan menyembunyikan tampilan gambar.
- */
+
+ //Bagian ini Adaptor akan menampilkan MarsApiStatus dari permintaan jaringan dalam tampilan gambar.
+ //ketika permintaan sedang memuat, maka akan menampilkan loading_animation.
+//Jika permintaan memiliki kesalahan, maka akan menampilkan gambar yang rusak untuk memberitahu terjadi kesalahan koneksi.
+ //Ketika permintaan selesai, maka akan menyembunyikan tampilan gambar.
+
 @BindingAdapter("marsApiStatus")
 fun bindStatus(statusImageView: ImageView, status: MarsApiStatus?) {
     when (status) {
